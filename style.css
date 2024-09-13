@@ -1,0 +1,208 @@
+/* Global Styles */
+body {
+    font-family: "Poppins", Arial, sans-serif;
+    background: linear-gradient(135deg, #1e272e, #0fbcf9); /* Dark slate to vibrant blue gradient */
+    padding: 20px;
+    margin: 0;
+    color: #ffffff; /* Light text for contrast */
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Container Styles - Glassmorphism Effect */
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+    background: rgba(255, 255, 255, 0.1); /* Semi-transparent background */
+    backdrop-filter: blur(20px); /* Blur effect */
+    padding: 50px;
+    border-radius: 20px;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.37); /* Strong glass-like shadow */
+    border: 1px solid rgba(255, 255, 255, 0.18); /* Light inner border */
+    transition: all 0.3s ease-in-out;
+}
+
+.container:hover {
+    transform: scale(1.02); /* Slight zoom on hover */
+    box-shadow: 0 12px 40px rgba(0, 0, 0, 0.6); /* Stronger shadow on hover */
+}
+
+/* Header Styles - Neon Gradient Text */
+h1,
+h2 {
+    text-align: center;
+    margin-bottom: 30px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    font-weight: 900;
+    font-size: 3rem;
+    background: linear-gradient(45deg, #00ff87, #0fbcf9); /* Neon green to blue */
+    color: transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
+    transition: color 0.3s ease-in-out;
+}
+
+h1:hover,
+h2:hover {
+    color: #ffffff; /* Text becomes fully white on hover */
+}
+
+/* Form Styles - Neumorphism Effect */
+fieldset {
+    margin-bottom: 30px;
+    padding: 35px;
+    border: none;
+    border-radius: 15px;
+    background: #f0f0f0;
+    box-shadow: 8px 8px 15px rgba(0, 0, 0, 0.1), -8px -8px 15px rgba(255, 255, 255, 0.5); /* Neumorphic shadows */
+    transition: all 0.3s ease-in-out;
+}
+
+legend {
+    font-weight: bold;
+    font-size: 1.6rem;
+    color: #00d2d3; /* Bright teal */
+}
+
+label {
+    display: block;
+    margin-top: 15px;
+    font-weight: bold;
+    color: #34495e; /* Dark gray for readability */
+}
+
+input {
+    margin-top: 10px;
+    padding: 15px;
+    border: none;
+    border-radius: 15px;
+    background: #e0e0e0;
+    box-shadow: inset 8px 8px 15px rgba(0, 0, 0, 0.15), inset -8px -8px 15px rgba(255, 255, 255, 0.7); /* Neumorphic input style */
+    font-size: 1.1rem;
+    color: #2c3e50;
+    transition: all 0.3s ease-in-out;
+}
+
+input:focus {
+    outline: none;
+    box-shadow: 0 0 10px rgba(0, 123, 255, 0.7); /* Glowing blue outline on focus */
+}
+
+/* Stylish Button */
+button {
+    padding: 15px 30px;
+    background: linear-gradient(135deg, #0fbcf9, #00ff87); /* Gradient for button */
+    color: #ffffff;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 1.3rem;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1), 0 8px 20px rgba(0, 255, 135, 0.3); /* Button shadow */
+}
+
+button:hover {
+    transform: scale(1.05); /* Slight grow effect */
+    background: linear-gradient(135deg, #00ff87, #0fbcf9); /* Reverse gradient on hover */
+    box-shadow: 0 10px 20px rgba(0, 255, 135, 0.4); /* Stronger shadow */
+}
+
+/* Resume Content - Glassmorphism with Card Style */
+#resume-content {
+    background-color: rgba(255, 255, 255, 0.1); /* Semi-transparent */
+    padding: 40px;
+    border-radius: 15px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(15px); /* Blurred glass effect */
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3); /* Glass card shadow */
+    color: #ecf0f1; /* Light text */
+    margin-top: 30px;
+    text-align: left;
+}
+
+#resume-content h3 {
+    color: #00ff87; /* Neon green for headings */
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+}
+
+#resume-content p {
+    margin: 10px 0;
+}
+
+/* Share Section Styles - Neon Buttons */
+#shareable-link {
+    display: block;
+    margin: 20px 0;
+    color: #00d2d3;
+    text-decoration: none;
+    font-size: 1.3rem;
+    transition: color 0.3s ease-in-out;
+}
+
+#shareable-link:hover {
+    color: #0fbcf9; /* Vibrant blue hover effect */
+    text-decoration: underline;
+}
+
+#copy-link-btn,
+#download-btn {
+    display: inline-block;
+    margin: 15px;
+    padding: 15px 35px;
+    background: linear-gradient(135deg, #00ff87, #0fbcf9); /* Stylish neon gradient buttons */
+    color: #ffffff;
+    border-radius: 30px;
+    font-weight: bold;
+    font-size: 1.3rem;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    border: none;
+    box-shadow: 0 10px 30px rgba(0, 255, 135, 0.5), 0 5px 15px rgba(0, 188, 249, 0.4); /* Neon glowing buttons */
+}
+
+#copy-link-btn:hover,
+#download-btn:hover {
+    transform: scale(1.05); /* Hover animation */
+    background: linear-gradient(135deg, #0fbcf9, #00ff87); /* Reverse gradient on hover */
+    box-shadow: 0 12px 35px rgba(0, 255, 135, 0.7); /* Stronger glow */
+}
+
+/* Responsive Styles */
+@media only screen and (max-width: 768px) {
+    .container {
+        padding: 30px;
+    }
+
+    h1,
+    h2 {
+        font-size: 2.5rem;
+        margin-bottom: 20px;
+    }
+
+    input,
+    button {
+        font-size: 1.1rem;
+        padding: 12px;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    h1,
+    h2 {
+        font-size: 2rem;
+    }
+
+    input,
+    button {
+        font-size: 1rem;
+        padding: 10px;
+    }
+
+    .container {
+        padding: 25px;
+    }
+}
